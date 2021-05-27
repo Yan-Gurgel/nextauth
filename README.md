@@ -1,5 +1,4 @@
-Dashgo é a quarta aplicação do Ignite. 
-Um painel administrativo contendo fluxo de autenticação, dashboard, listagem e cadastro usando Chakra UI no Next.js.
+Base para criar autenticação de aplicações com ReactJS
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
