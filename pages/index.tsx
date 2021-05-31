@@ -1,7 +1,5 @@
 import { Flex } from '@chakra-ui/layout';
-import { GetServerSideProps } from 'next';
 import { FormEvent, useContext, useState } from 'react';
-import { parseCookies } from 'nookies'
 import { AuthContext } from '../contexts/AuthContext';
 import styles from '../styles/Home.module.css'
 import { withSRRGuest } from '../utils/withSRRGuest';
@@ -36,7 +34,7 @@ export default function Home() {
   )
 }
 
-export const getServerSideProps = withSRRGuest<{ users: string[] }>(async (ctx) =>{
+export const getServerSideProps = withSRRGuest(async (ctx) =>{
   return {
     props: {}
   }
