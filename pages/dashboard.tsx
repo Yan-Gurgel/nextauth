@@ -7,7 +7,7 @@ import { api } from "../services/apiClient";
 import { withSRRRAuth } from "../utils/withSRRAuth";
 
 export default function Dashboard(){
-  const { user } = useContext(AuthContext)
+  const { user, signOut } = useContext(AuthContext)
 /*
   const userCanSeeMetrics = useCan({
     //Administrador ou editor podem ver as métricas
@@ -23,6 +23,9 @@ export default function Dashboard(){
   return (
     <>
     <h1>Dashboard: {user?.email}</h1>
+
+    <button onClick={signOut}>Sign out</button>
+
     {/**Permissão de um tipo de usuario específico 
     { userCanSeeMetrics && <div>Métricas</div> }
     */}
